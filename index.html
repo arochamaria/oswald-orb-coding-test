@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS Coding Test</title>
+
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="navigation-menu" id="nav">
+      <h1 class="logo"><a href="#" title="Edouard Denis">Edouard Denis</a></h1>
+      <a href="#" class="navigation-item">L’adresse</a>
+      <a href="#" class="navigation-item"">La résidence</a>
+      <a href="#" class="navigation-item"">Les Prix</a>
+      <a href="#" class="btn btn-primary">JE M’INSCRIS POUR EN SAVOIR PLUS</a>
+      <a href="#" class="navigation-phone">0825 895 460*</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <div class="intro-section">
+    <div class="main-container">
+      <p class="intro-date">Les 14 et 15 janvier</p><br>
+      <p class="intro-title">Grand lancement à Chalifert</p><br>
+      <p class="intro-description">Devenez prop»riétaire aux portes de Val d’Europe</p>
+      <div class="pastille"></div>
+    </div>
+  </div>
+  <div class="intro-section-outside">
+    <p class="intro-date-mobile">Les 14 et 15 janvier</p>
+    <p class="intro-title-mobile">grand lancement à Chalifert</p>
+    <p class="intro-description-mobile">Devenez prop»riétaire aux portes de Val d’Europe</p>
+    <div class="pastille-mobile"></div>
+  </div>
+  <div class="grey-section">
+    <div class="main-container">
+      <h2 class="plein-ciel">Plein Ciel<span></span>Chalifert</h2>
+      <p class="grey-section-copy primary">à 10 min de chessy et du rer</p>
+      <p class="grey-section-copy secondary">découvrez une adresse et des prix exceptionnels</p>
+      <p class="grey-section-copy tertiary">semaine découverte du 7 au 13 janvier</p>
+      <a href="#" class="btn btn-big btn-primary">Je m’inscris pour en savoir plus</a>
+    </div>
+  </div>
+  <div class="prices-section">
+    <div class="price-item">
+      <p class="item-type">votre studio</p>
+      <p class="item-copy">à partir de</p>
+      <p class="item-price">390€<span class="item-month">/MOIS<span class="item-month-">(4)</span></p>
+    </div>
+    <div class="price-item">
+      <p>votre studio</p>
+    </div>
+    <div class="price-item">
+      <p>votre studio</p>
+    </div>
+    <div class="price-item">
+      <p>votre studio</p>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("nav");
+      if (x.className === "navigation-menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "navigation-menu";
+      }
+    }
+    </script>
+
+</body>
+
+</html>
